@@ -2,7 +2,9 @@ package note;
 
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -10,8 +12,8 @@ public class NoteService {
     private Map<Long, Note> notes = new HashMap<>();
     private Long id = 0L;
 
-    public Map<Long, Note> listAll(){
-        return notes;
+    public List<Note> listAll(){
+        return new ArrayList<>(notes.values());
     }
 
     public Note add(Note note){

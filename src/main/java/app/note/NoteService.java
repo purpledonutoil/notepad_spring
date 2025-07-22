@@ -1,4 +1,4 @@
-package note;
+package app.note;
 
 import org.springframework.stereotype.Service;
 

@@ -3,7 +3,6 @@ package app.note;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.sql.Connection;
 import java.util.List;
 
 @Service
